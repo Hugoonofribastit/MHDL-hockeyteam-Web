@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mdhl3.css">
+    <title>Mighty Ducks Hockey League</title>
+</head>
+<body>
+    <header> 
+        <div class="space"></div>
+            <div class="headerNoTitle">
+            <nav class="seccion-home">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="rules.html">Rules</a>
+                <a href="gameinformation.html">Game Info</a>
+                <a id="active" href="#">Registration</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+   
+    <h2 class="eventos">Registration</h2>
+
+    <main id="form-container">
+        <img class="logo2" src="./assets/logo.png" alt="logo" /> 
+       
+            
+            <form action="show_data.html" method="GET">
+                <h1 class="mb mt-large">Registration Form</h1>
+                <div class="mb">
+                    <label for="nombre">Player's first name</label>
+                    <input type="text" id="nombre" name="first_name" />
+                    <label for="apellido">Last name</label>
+                    <input type="text" id="apellido" name="last_name" />
+                    
+                </div>
+                <div class="mb">
+                   <div class="street-address mb">
+                    <label for="calle">Street Address:</label>
+                    <input type="text" id="calle" name="street" />
+                   </div>
+                    <label for="ciudad">City:</label>
+                    <input type="text" id="ciudad" name="city" />
+                    <label for="postal">Zip Code:</label>
+                    <input type="text" id="postal" name="zip_code" />
+                </div>
+                <div class="birthday-gender mb">
+                    <div>
+                        <label class="birthday" for="cumpleaños">Birth Date(mm/dd/yyy)</label>
+                        <input class="mbs" type="date" id="cumpleaños" name="birthday">
+                    </div>
+                    <p class="mb left">Gender:</p>
+                    <label class="left" for="hombre">Male</label>
+                    <input class="mbs left" type="radio" id="hombre" name="gender" value="male"/>
+                    <label class="label-left" for="mujer">Female</label>
+                    <input class="left" type="radio" id="mujer" name="gender" value="female"/>
+                </div>
+                <div class="d-flex mb">
+                    <p class="mbs right">Grade:</p>
+                    <input  type="radio" id="preesc" name="grade" value="preschool"/>
+                    <label class="left-s" for="preesc">Pre-School</label>
+                    <input  class="left" type="radio" id="primero" name="grade" value="first"/>
+                    <label class="left-s"  for="primero">1st</label>
+                    <input  class="left" type="radio" id="segundo" name="grade" value="second"/>
+                    <label class="left-s" for="segundo">2nd</label>
+                    <input class="left" type="radio" id="tercero" name="grade" value="third"/>
+                    <label class="left-s" for="tercero">3rd</label>
+                    <input class="left" type="radio" id="cuarto" name="grade" value="forth"/>
+                    <label class="left-s" for="cuarto">4th</label>
+                    <input class="left" type="radio" id="quinto" name="grade" value="fifth"/>
+                    <label class="left-s" for="quinto">5th</label>
+                </div>
+                <div class="mb">
+                    <p class="mbs bold">Which elementary school do you live near?</p>
+                    <p class="mb bold">Closest School</p>
+                   <div class="d-flex">
+                    <div class="flex-column">
+                        <div>
+                           <input class="mbm" type="radio" id="katz" name="place" value="Katzenmaiert"/>
+                           <label class="right" for="katz">AJ Katzenmaiert</label>
+                        </div>
+                        <div>
+                           <input class="mbm" type="radio" id="green" name="place" value="Greenbay"/>
+                           <label for="green">Greenbay</label>
+                        </div>
+                        <div>
+                           <input class="mbm" type="radio" id="howard" name="place" value="Howard_A_Yeager"/>
+                           <label for="howard">Howard A Yeager</label>                        
+                        </div>
+                       
+                      </div>
+   
+                      <div class="flex-column">
+                       <div>
+                           <input class="mbm" type="radio" id="marjorie" name="place" value="Marjorie_P_Hart"/>
+                           <label for="marjorie">Marjorie P Hart</label>                    
+                       </div>
+                       <div>
+                           <input class="mbm" type="radio" id="north" name="place" value="North_Elementary"/>
+                           <label for="north">North Elementary</label>
+                       </div>
+                       <div>
+                           <input class="mbm" type="radio" id="south" name="place" value="South_Elementary"/>
+                           <label for="south">South Elementary</label>
+                       </div>
+                   </div>
+                    
+                 </div>
+                </div>
+                <div>
+                    <p class="mb bold">What position(s) do you normally play?(check all that apply)</p>
+                <div class="d-flex">
+                    <div class="flex-column">
+                        <div>
+                            <input class="mbm" type="checkbox" id="forward" name="position" value="forward"/>
+                        <label class="right" for="forward">Forward</label> 
+                        </div> 
+                        <div>
+                            <input class="mb" type="checkbox" id="def" name="position" value="def"/>
+                        <label for="def">Defense</label> 
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <div>
+                            <input class="mbm" type="checkbox" id="mid" name="position" value="mid"/>
+                            <label for="mid">Midfield</label> 
+                        </div>
+                        <div>
+                            <input class="mb" type="checkbox" id="goalk" name="position" value="goalkeeper"/>
+                        <label for="goalk">Goalkeeper</label> 
+                        </div>
+                    </div>   
+                </div>                   
+                </div>
+                <div>
+                    <p class="mbm mt bold">Uniform Size:</p>
+                    <div class="d-flex">
+
+                        <div class="flex-column right">
+                            <div > 
+                                <input class="mbm" type="radio" id="ys" name="size" value="ys">
+                                <label  for="ys">Youth Small</label>
+                            </div>
+                            <div>
+                                <input class="mbm" type="radio" id="ym" name="size" value="ym">
+                                <label for="ym">Youth Medium</label>
+                            </div>
+                            <div>
+                                <input class="mbm" type="radio" id="yl" name="size" value="yl">
+                                <label for="yl">Youth Large</label>
+                            </div>
+                            <div>
+                                <input class="mb" type="radio" id="small" name="size" value="small">
+                                <label for="small">Small</label>
+                            </div>
+                        </div>
+
+                        <div class="flex-column">
+                            <div>
+                                <input class="mbm" type="radio" id="med" name="size" value="med">
+                                <label for="med">Medium</label>
+                            </div>
+                            <div>
+                                <input class="mbm" type="radio" id="large" name="size" value="large">
+                                <label for="large">Large</label>
+                            </div>
+                            <div>
+                                <input class="mbm" type="radio" id="xl" name="size" value="xl">
+                                <label for="xl">Extra-Large</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="bold mbs">Permission to Play</p>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of th Mighty Ducks Hockey League (MDHL). In recognizong the possibility of physocal injury associated with the hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, indcluding the facilities used for registrant's and games, against any claims by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities, which trantransportation.</p>
+                    <p class="mbm">By signing below, I hereby agree and authorize the above in addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <div class="d-flex space-bt cajita">
+                        <div>
+                            <label for="guardname">Parent/Guardian/Signature:</label>
+                            <input class="" type="text" id="guardname" name="guardian_name" />
+                        </div>
+                        <div class="left">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="submit_date">
+                        </div>
+                    </div>
+                    <div>                        
+                    <input class="form-submit-button" type="submit" value="Submit"/>
+                    </div>
+                </div>
+
+
+            
+            </form>
+       
+    </main>
+    <footer>
+        Hugo Onofri Bastit  © 2022
+    </footer> 
+</body>
+</html>
